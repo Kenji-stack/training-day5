@@ -1,0 +1,152 @@
+Microsoft Windows [Version 10.0.19045.6466]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\platypus2000jp>npm install -g firebase-tools
+npm warn deprecated node-domexception@1.0.0: Use your platform's native DOMException instead
+
+added 752 packages in 37s
+
+81 packages are looking for funding
+  run `npm fund` for details
+
+C:\Users\platypus2000jp>firebase login
+i  The Firebase CLI’s MCP server feature can optionally make use of Gemini in Firebase. Learn more about Gemini in Firebase and how it uses your data: https://firebase.google.com/docs/gemini-in-firebase#how-gemini-in-firebase-uses-your-data
+√ Enable Gemini in Firebase features? Yes
+
+i  Firebase optionally collects CLI and Emulator Suite usage and error reporting information to help improve our products. Data is collected in accordance with Google's privacy policy (https://policies.google.com/privacy) and is not used to identify you.
+√ Allow Firebase to collect CLI and Emulator Suite usage and error reporting information? Yes
+
+i  To change your preferences at any time, run `firebase logout` and `firebase login` again.
+
+Visit this URL on this device to log in:
+https://accounts.google.com/o/oauth2/auth?client_id=563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com&scope=email%20openid%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloudplatformprojects.readonly%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Ffirebase%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloud-platform&response_type=code&state=94811755&redirect_uri=http%3A%2F%2Flocalhost%3A9005
+
+Waiting for authentication...
+
++  Success! Logged in as funkrowd.kenji@gmail.com
+
+C:\Users\platypus2000jp>mkdir my-firebase-functions
+
+C:\Users\platypus2000jp>cd my-firebase-functions
+
+C:\Users\platypus2000jp\my-firebase-functions>firebase init firestore
+
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\platypus2000jp\my-firebase-functions
+
+√ Are you ready to proceed? Yes
+
+=== Project Setup
+
+First, let's associate this project directory with a Firebase project.
+You can create multiple project aliases by running firebase use --add,
+
+√ Please select an option: Use an existing project
+√ Select a default Firebase project for this directory: smile-calendar-system (Smile-Calendar-System)
+
+=== Firestore Setup
+i  firestore: ensuring required API firestore.googleapis.com is enabled...
+!  firestore: missing required API firestore.googleapis.com. Enabling now...
+√ Please select the location of your Firestore database: asia-northeast1
+
+Firestore Security Rules allow you to define how and when to allow
+requests. You can keep these rules in your project directory
+and publish them with firebase deploy.
+
+√ What file should be used for Firestore Rules?
+
+Firestore indexes allow you to perform complex queries while
+maintaining performance that scales with the size of the result
+set. You can keep index definitions in your project directory
+and publish them with firebase deploy.
+
+√ What file should be used for Firestore indexes? firestore.indexes.json
++  Wrote firestore.rules
++  Wrote firestore.indexes.json
+
++  Wrote configuration info to firebase.json
++  Wrote project information to .firebaserc
++  Wrote .gitignore
+
++  Firebase initialization complete!
+
+C:\Users\platypus2000jp\my-firebase-functions>firebase init functions
+
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\platypus2000jp\my-firebase-functions
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+√ Are you ready to proceed? Yes
+
+=== Project Setup
+
+First, let's associate this project directory with a Firebase project.
+You can create multiple project aliases by running firebase use --add,
+
+i  Using project smile-calendar-system (Smile-Calendar-System) .
+
+=== Functions Setup
+Let's create a new codebase for your functions.
+A directory corresponding to the codebase will be created in your project
+with sample code pre-configured.
+
+See https://firebase.google.com/docs/functions/organize-functions for
+more information on organizing your functions using codebases.
+
+Functions can be deployed with firebase deploy.
+
+√ What language would you like to use to write Cloud Functions? JavaScript
+√ Do you want to use ESLint to catch probable bugs and enforce style? Yes
++  Wrote functions/package.json
++  Wrote functions/.eslintrc.js
++  Wrote functions/index.js
++  Wrote functions/.gitignore
+√ Do you want to install dependencies with npm now? Yes
+npm warn EBADENGINE Unsupported engine {
+npm warn EBADENGINE   package: undefined,
+npm warn EBADENGINE   required: { node: '22' },
+npm warn EBADENGINE   current: { node: 'v24.11.1', npm: '11.6.2' }
+npm warn EBADENGINE }
+npm warn deprecated inflight@1.0.6: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
+npm warn deprecated @humanwhocodes/config-array@0.13.0: Use @eslint/config-array instead
+npm warn deprecated rimraf@3.0.2: Rimraf versions prior to v4 are no longer supported
+npm warn deprecated glob@7.2.3: Glob versions prior to v9 are no longer supported
+npm warn deprecated glob@7.2.3: Glob versions prior to v9 are no longer supported
+npm warn deprecated @humanwhocodes/object-schema@2.0.3: Use @eslint/object-schema instead
+npm warn deprecated eslint@8.57.1: This version is no longer supported. Please see https://eslint.org/version-support for other options.
+
+added 578 packages, and audited 579 packages in 27s
+
+85 packages are looking for funding
+  run `npm fund` for details
+
+9 high severity vulnerabilities
+
+To address all issues, run:
+  npm audit fix
+
+Run `npm audit` for details.
+
++  Wrote configuration info to firebase.json
++  Wrote project information to .firebaserc
+
++  Firebase initialization complete!
+
+C:\Users\platypus2000jp\my-firebase-functions>
